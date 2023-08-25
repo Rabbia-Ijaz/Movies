@@ -7,7 +7,7 @@
 
 import Foundation
 class PopularMovies: NSObject, Codable {
-    var results: [MovieDetail]?
+    var results: [Movie]?
     var page: Int?
     var total_results: Int?
     var total_pages: Int?
@@ -27,7 +27,7 @@ class PopularMovies: NSObject, Codable {
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: Codingkeys.self)
         
-        results = try values.decodeIfPresent([MovieDetail].self, forKey: .results) ?? []
+        results = try values.decodeIfPresent([Movie].self, forKey: .results) ?? []
         page = try values.decodeIfPresent(Int.self, forKey: .page) ?? 0
         total_results = try values.decodeIfPresent(Int.self, forKey: .total_results) ?? 0
         total_pages = try values.decodeIfPresent(Int.self, forKey: .total_pages) ?? 0
