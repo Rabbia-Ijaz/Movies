@@ -11,7 +11,7 @@ class TmdbAPI: NSObject {
     class func fetchPopularMoviesList(completion: @escaping ([String: Any]?) -> Void) {
         let headers = [
           "accept": "application/json",
-          "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDdkN2ZjZmI0ZjI4YWY2MDIyN2RiZmY3ZWM3MjJkZiIsInN1YiI6IjY0ZTg0MWIwOTBlYTRiMDBhZWZhODc1OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.a3WQZOBAgOUOFxqQJ1JUQJpPGeb56gJUN7aFeZ7YBqc"
+          "Authorization": "Bearer addAPIkey" //add api key in place of addAPIkey
         ]
         if let url = URL(string:"https://api.themoviedb.org/3/movie/popular"){
             
@@ -50,7 +50,7 @@ class TmdbAPI: NSObject {
     class func fetchMovieDetails(id:Int, completion: @escaping ([String: Any]?) -> Void) {
         let headers = [
           "accept": "application/json",
-          "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDdkN2ZjZmI0ZjI4YWY2MDIyN2RiZmY3ZWM3MjJkZiIsInN1YiI6IjY0ZTg0MWIwOTBlYTRiMDBhZWZhODc1OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.a3WQZOBAgOUOFxqQJ1JUQJpPGeb56gJUN7aFeZ7YBqc"
+          "Authorization": "Bearer addAPIkey" //add api key in place of addAPIkey
         ]
         if let url = URL(string:"https://api.themoviedb.org/3/movie/\(id)"){
             
