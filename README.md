@@ -31,12 +31,14 @@ Before getting started, you'll need to create a free account at [TMDb](https://w
 1. Clone or download the project from this GitHub repository.
 
 2. Open the project in Xcode.
+   
+4. open Movies/Movies/APIService/TmdbAPI.swift file and in two places replace "add api key" with "Bearer yourAPIkey" you will get on [TMDb API](https://www.themoviedb.org/settings/api)
 
-3. Before running the app, make sure to add your TMDb API key to the project. You can do this by editing the configuration file or constants in your code.
+5. Before running the app, make sure to add your TMDb API key to the project. You can do this by editing the configuration file or constants in your code.
 
-4. Build and run the app on your iOS device or simulator.
+6. Build and run the app on your iOS device or simulator.
 
-5. Explore the list of popular movies and click on a movie to view its details.
+7. Explore the list of popular movies and click on a movie to view its details.
 
 ## Acknowledgments
 
